@@ -82,7 +82,7 @@ var Questions = [
         },
     },
     {
-        question: "Ok, now for the final question... Which one is the bunnyest ?",
+        question: "Ok, now for the final question... Which one is the bunniest ?",
         wrong_image: "bunny",
         answers: {
             wrong: "HA ! WRONG ! Since bunnies are all equals, no bunny is bunnier than another bunny ! In your face, you bunny-ignorant person !!",
