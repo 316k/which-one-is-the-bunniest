@@ -1,0 +1,16 @@
+{
+  "name": "Which One is the Bunniest !?",
+  "description": "A humorous simple game where you have to click on the image that looks the most like a bunny.",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/icon-128.png",
+    "64": "/icon-64.png",
+    "32": "/icon-32.png"
+  },
+  "developer": {
+    "name": "316k",
+    "url": "http://wasting-ti.me/"
+  },
+  "default_locale": "en",
+  "version": "1.0"
+}

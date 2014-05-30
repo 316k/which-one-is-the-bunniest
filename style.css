@@ -1,0 +1,220 @@
+/* Fonts */
+@font-face {
+    font-family: 'Purisa';
+    src: url('purisa.ttf');
+}
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url('bg.png');
+    background-position: top center;
+    background-size: 90%;
+    background-color: black;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: Purisa;
+}
+
+/* TODO : @media stuff */
+header {
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    z-index: -1;
+    padding-top: 100%;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 5%;
+    font-size: 400%;
+}
+
+section.content {
+    height: 100%;
+    text-align: center;
+}
+
+section img {
+    width: 25%;
+    padding: 3%;
+    position: absolute;
+    top: 5%;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    border: white 5px solid;
+    z-index: 10;
+    transition: transform 0.2s ease-in-out 0s;
+}
+
+section img:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: white 0 0 10px;
+}
+
+section img:nth-child(1) {
+    left: 17%;
+}
+
+section img:nth-child(2) {
+    right: 17%;
+}
+
+button#play {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    height: 35%;
+    background-color: rgb(254, 124, 63);
+    border-radius: 50%;
+    border: none;
+    font-size: 60px;
+    font-family: Purisa;
+    background-image: none;
+    opacity: 0.9;
+}
+
+button#play:hover {
+    opacity: 1;
+    color: rgba(0, 0, 0, 1);
+    transition: transform 0.2s ease-in-out 0s;
+}
+
+#question {
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    position: absolute;
+    bottom: -25%;
+    background-color: rgb(222, 154, 154);
+    z-index: 15;
+    border-radius: 4% 4% 0 0;
+}
+
+#question p {
+    margin-top: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#question span {
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    text-align: center;
+    left: 35%;
+    text-decoration: underline;
+}
+
+#question span:hover {
+    font-weight: bold;
+}
+
+#question .score-container {
+    font-size: x-large;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.3%;
+}
+
+#question .score-container {
+    font-weight: bold;
+}
+
+#no-portrait {
+    display: none;
+}
+
+@media all and (orientation: portrait) {
+    #no-portrait {
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: 10000000000;
+    }
+
+    #no-portrait p {
+        font-size: 150%;
+        margin: 5%;
+        margin-top: 40%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    header {
+        top: 0;
+    }
+
+    header h2 {
+        font-size: 40px;
+    }
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    button#play {
+        font-size: xx-large;
+    }
+
+    #question {
+        font-size: large;
+    }
+
+    #question .score-container, #question span {
+        font-size: medium;
+    }
+}
+
+@media all and (max-width: 500px) {
+    header h2 {
+        font-size: 24px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    button#play {
+        font-size: x-large;
+    }
+
+    section img {
+        top: 2%;
+    }
+
+    section img:first-child {
+        left: 15%;
+    }
+
+    section img:nth-child(2) {
+        right: 15%;
+    }
+
+    #question {
+        font-size: medium;
+    }
+
+    #question span {
+        left: 30%;
+        width: 40%;
+    }
+
+    #question .score-container, #question span {
+        font-size: medium;
+    }
+
+    #question .long-text {
+        font-size: small;
+    }
+}

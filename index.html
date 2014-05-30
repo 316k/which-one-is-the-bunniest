@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Which one is the bunnyest !?</title>
+        <link rel="stylesheet" href="style.css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body>
+        <section id="no-portrait">
+            <p>Please, switch the orientation of your device or resize your browser to have a landscape view !</p>
+        </section>
+        <section style="width: 100%; padding: 0; margin: 0;">
+            <header>
+                <h2>Which one is the</h2>
+                <h1 class="bunniest">Bunniest !?</h1>
+            </header>
+            <section class="content">
+                <img data-ordre="0" src="" />
+                <img data-ordre="1" src="" />
+                <button id="play">Play the game !</button>
+            </section>
+            <section id="question">
+                <p></p>
+                <span>[Sure !]</span>
+                <div class="score-container">
+                    Score : <strong class="score">0/0</strong>
+                </div>
+            </section>
+        </section>
+        <script src="jquery-1.11.0.min.js"></script>
+        <script src="questions.js"></script>
+        <script src="view.js"></script>
+        <script src="controller.js"></script>
+    </body>
+</html>
